@@ -1,8 +1,25 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import ProductGrid from "@/components/ProductGrid";
-import products from "@/data/products";
 
 export default function ProductsPage() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("/api/products")
+      .then((res) => {
+        if (!res.ok) throw new Error("Gagal memuat produk");
+        return res.json();
+      })
+      .then((data) => setProducts(data))
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-50">
       <Navigation />
@@ -16,7 +33,17 @@ export default function ProductsPage() {
           </p>
         </div>
 
-        <ProductGrid products={products} />
+        {loading && (
+          <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 px-4">
+            {Array.from({ length: 9 }).map((_, i) => (
+              <div key={i} className="h-72 animate-pulse rounded-3xl bg-slate-200" />
+            ))}
+          </div>
+        )}
+        {error && (
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">{error}</p>
+        )}
+        {!loading && !error && <ProductGrid products={products} />}
       </main>
     </div>
   );

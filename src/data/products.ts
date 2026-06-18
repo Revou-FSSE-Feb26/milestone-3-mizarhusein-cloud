@@ -1,6 +1,6 @@
 export type Product = {
   id: string;
-  name: string;
+  title: string;
   category: string;
   price: number;
   description: string;
@@ -9,254 +9,257 @@ export type Product = {
 };
 
 const products: Product[] = [
-// CAT
+// KUCING
   {
     id: "cozy-cat-comfort-bed",
-    name: "Cozy Cat Comfort Bed",
+    title: "Cozy Cat Comfort Bed",
     category: "Kucing",
     price: 129000,
     description: "Tempat tidur lembut untuk kucing yang nyaman dan mudah dicuci.",
-    details:
-      "Bantal bulu sintetis, desain anti-slip, dan ukuran pas untuk kucing dewasa.",
-    image:
-      "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80",
+    details: "Bantal bulu sintetis, desain anti-slip, dan ukuran pas untuk kucing dewasa.",
+    image: "https://images.unsplash.com/photo-1608350427822-ed3b978b37d6?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "cat-scratching-post",
-    name: "Cat Scratching Post",
+    title: "Cat Scratching Post",
     category: "Kucing",
     price: 125000,
     description: "Tiang garukan untuk menjaga kuku kucing tetap sehat.",
-    details:
-      "Material sisal kuat, alas stabil, dan cocok untuk kucing aktif.",
-    image:
-      "https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=1200&auto=format&fit=crop",
+    details: "Material sisal kuat, alas stabil, dan cocok untuk kucing aktif.",
+    image: "https://images.unsplash.com/photo-1545249390-6bdfa286032f?q=80&w=344&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "cat-tunnel-toy",
-    name: "Cat Tunnel Toy",
+    title: "Cat Tunnel Toy",
     category: "Kucing",
     price: 98000,
     description: "Terowongan bermain interaktif untuk kucing indoor.",
-    details:
-      "Dapat dilipat, ringan, dan memiliki bola gantung untuk bermain.",
-    image:
-      "https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=1200&auto=format&fit=crop",
+    details: "Dapat dilipat, ringan, dan memiliki bola gantung untuk bermain.",
+    image: "https://images.unsplash.com/photo-1680925296659-75d0d4527291?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "premium-cat-bed",
-    name: "Premium Cat Bed",
+    title: "Premium Cat Bed",
     category: "Kucing",
     price: 189000,
     description: "Kasur empuk premium untuk tidur nyaman kucing.",
-    details:
-      "Bahan lembut, anti-slip, dan mudah dicuci.",
-    image:
-      "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=1200&auto=format&fit=crop",
+    details: "Bahan lembut, anti-slip, dan mudah dicuci.",
+    image: "https://images.unsplash.com/photo-1760110756737-9ea31c02ba45?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "cat-feeding-bowl",
-    name: "Cat Feeding Bowl",
+    title: "Cat Feeding Bowl",
     category: "Kucing",
     price: 45000,
     description: "Mangkuk makan modern untuk kucing.",
-    details:
-      "Desain ergonomis dan anti tumpah.",
-    image:
-      "https://images.unsplash.com/photo-1545249390-6bdfa286032f?q=80&w=1200&auto=format&fit=crop",
+    details: "Desain ergonomis dan anti tumpah.",
+    image: "https://images.unsplash.com/photo-1767023028317-bbafd3157967?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "cat-activity-wheel",
-    name: "Cat Activity Wheel",
+    title: "Cat Activity Wheel",
     category: "Kucing",
     price: 77000,
     description: "Roda aktivitas untuk kucing agar tetap aktif di rumah.",
-    details:
-      "Desain senyap, struktur kuat, dan cocok untuk kucing indoor.",
-    image:
-      "https://media.istockphoto.com/id/2231193921/id/foto/close-up-kucing-sphynx-hitam-tak-berbulu-dengan-mata-kuning-berjalan-dengan-anggun-di-roda.jpg?s=612x612&w=is&k=20&c=ADVVY4ihqbwlJeI60EPB7ThGZdE3wPRi3vHgmXRffH4=",
+    details: "Desain senyap, struktur kuat, dan cocok untuk kucing indoor.",
+    image: "https://media.istockphoto.com/id/2231193921/id/foto/close-up-kucing-sphynx-hitam-tak-berbulu-dengan-mata-kuning-berjalan-dengan-anggun-di-roda.jpg?s=612x612&w=is&k=20&c=ADVVY4ihqbwlJeI60EPB7ThGZdE3wPRi3vHgmXRffH4=",
   },
 
-// DOG
+// ANJING
   {
     id: "smart-dog-travel-bag",
-    name: "Smart Dog Travel Bag",
+    title: "Smart Dog Travel Bag",
     category: "Anjing",
     price: 185000,
     description: "Tas perjalanan ringan untuk anjing kecil dengan ventilasi optimal.",
-    details:
-      "Material anti air, pengunci kuat, dan bantalan nyaman untuk perjalanan sehari.",
-    image:
-      "https://images.unsplash.com/photo-1661322563051-15248c0568a1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Material anti air, pengunci kuat, dan bantalan nyaman untuk perjalanan sehari.",
+    image: "https://images.unsplash.com/photo-1661322563051-15248c0568a1?q=80&w=870&auto=format&fit=crop",
   },
   {
     id: "dog-bone-treat",
-    name: "Beef Bone Treat Set",
+    title: "Beef Bone Treat Set",
     category: "Anjing",
     price: 56000,
     description: "Set cemilan tulang daging sapi untuk menjaga gigi dan mood anjing.",
-    details:
-      "Diproses tanpa pengawet, cocok untuk anjing dewasa, dan dikemas segar.",
-    image:
-      "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=800&q=80",
+    details: "Diproses tanpa pengawet, cocok untuk anjing dewasa, dan dikemas segar.",
+    image: "https://images.unsplash.com/photo-1587964788833-d91de849fbb3?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-  id: "dog-chew-toy",
-  name: "Dog Chew Toy",
-  category: "Anjing",
-  price: 85000,
-  description: "Mainan kunyah kuat untuk anjing aktif.",
-  details:
-    "Membantu menjaga kesehatan gigi dan mengurangi stres.",
-  image:
-    "https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop",
+    id: "dog-chew-toy",
+    title: "Dog Chew Toy",
+    category: "Anjing",
+    price: 85000,
+    description: "Mainan kunyah kuat untuk anjing aktif.",
+    details: "Membantu menjaga kesehatan gigi dan mengurangi stres.",
+    image: "https://plus.unsplash.com/premium_photo-1739037146008-f94118a63785?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    id: "dog-food-dispenser",
-    name: "Dog Food Dispenser",
+    id: "dog-and-cat-food-dispenser",
+    title: "Dog and Cat Food Dispenser",
     category: "Anjing",
     price: 210000,
     description: "Dispenser makanan otomatis untuk anjing.",
-    details:
-      "Kapasitas besar dan mudah dibersihkan.",
-    image:
-      "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200&auto=format&fit=crop",
+    details: "Kapasitas besar dan mudah dibersihkan.",
+    image: "https://images.unsplash.com/photo-1765110278433-7b0d294a1104?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "dog-winter-jacket",
-    name: "Dog Winter Jacket",
+    title: "Dog Winter Jacket",
     category: "Anjing",
     price: 165000,
     description: "Jaket hangat untuk anjing kecil dan sedang.",
-    details:
-      "Material lembut dan nyaman digunakan harian.",
-    image:
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop",
+    details: "Material lembut dan nyaman digunakan harian.",
+    image: "https://images.unsplash.com/photo-1736434039745-db6da6821be3?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "portable-dog-bottle",
-    name: "Portable Dog Bottle",
+    title: "Portable Dog Bottle",
     category: "Anjing",
     price: 70000,
     description: "Botol minum portable untuk perjalanan.",
-    details:
-      "Praktis digunakan saat jalan-jalan atau traveling.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1667563115157-a6d48d8b03d0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Praktis digunakan saat jalan-jalan atau traveling.",
+    image: "https://plus.unsplash.com/premium_photo-1667563115157-a6d48d8b03d0?q=80&w=387&auto=format&fit=crop",
   },
 
 // GUINEA PIG
   {
     id: "guinea-pig-playhouse",
-    name: "Guinea Pig Playhouse",
+    title: "Guinea Pig Playhouse",
     category: "Guinea Pig",
     price: 99000,
     description: "Rumah bermain kecil yang aman untuk kelinci mini dan guinea pig.",
-    details:
-      "Material ramah hewan, ventilasi baik, dan akses mudah untuk membersihkan.",
-    image:
-      "https://images.unsplash.com/photo-1642387702727-8fc52fd8f522?q=80&w=415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Material ramah hewan, ventilasi baik, dan akses mudah untuk membersihkan.",
+    image: "https://images.unsplash.com/photo-1642387702727-8fc52fd8f522?q=80&w=415&auto=format&fit=crop",
   },
   {
     id: "guinea-pig-snag-hay",
-    name: "Premium Hay Snack",
+    title: "Premium Hay Snack",
     category: "Guinea Pig",
     price: 45000,
     description: "Makanan serat tinggi yang cocok untuk guinea pig dan kelinci kecil.",
-    details:
-      "Dipetik segar, kaya vitamin, dan dikemas dalam porsi praktis.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1673131729425-3971eb3ac5b7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Dipetik segar, kaya vitamin, dan dikemas dalam porsi praktis.",
+    image: "https://plus.unsplash.com/premium_photo-1673131729425-3971eb3ac5b7?q=80&w=387&auto=format&fit=crop",
   },
   {
-  id: "guinea-pig-food-pack",
-  name: "Guinea Pig Food Pack",
-  category: "Guinea Pig",
-  price: 65000,
-  description: "Paket makanan sehat untuk guinea pig.",
-  details:
-    "Mengandung vitamin dan serat tinggi.",
-  image:
-    "https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=1200&auto=format&fit=crop",
+    id: "guinea-pig-food-pack",
+    title: "Guinea Pig Food Pack",
+    category: "Guinea Pig",
+    price: 65000,
+    description: "Paket makanan sehat untuk guinea pig.",
+    details: "Mengandung vitamin dan serat tinggi.",
+    image: "https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: "guinea-pig-water-bottle",
-    name: "Guinea Pig Water Bottle",
+    title: "Guinea Pig Water Bottle",
     category: "Guinea Pig",
     price: 35000,
     description: "Botol minum gantung praktis.",
-    details:
-      "Anti bocor dan mudah dipasang di kandang.",
-    image:
-      "https://images.unsplash.com/photo-1583512603806-077998240c7a?q=80&w=1200&auto=format&fit=crop",
+    details: "Anti bocor dan mudah dipasang di kandang.",
+    image: "https://images.unsplash.com/photo-1721327900409-2393c686bc48?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "guinea-pig-hideout",
-    name: "Guinea Pig Hideout",
+    title: "Guinea Pig Hideout",
     category: "Guinea Pig",
     price: 78000,
     description: "Tempat persembunyian nyaman untuk guinea pig.",
-    details:
-      "Membantu hewan merasa aman dan rileks.",
-    image:
-      "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?q=80&w=1200&auto=format&fit=crop",
+    details: "Membantu hewan merasa aman dan rileks.",
+    image: "https://images.unsplash.com/photo-1661176071713-a799aad702cf?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "guinea-pig-hay-feeder",
-    name: "Guinea Pig Hay Feeder",
+    title: "Guinea Pig Hay Feeder",
     category: "Guinea Pig",
     price: 55000,
     description: "Tempat penyimpanan hay agar tetap bersih.",
-    details:
-      "Desain praktis dan mudah diisi ulang.",
-    image:
-      "https://images.unsplash.com/photo-1516934024742-b461fba47600?q=80&w=1200&auto=format&fit=crop",
+    details: "Desain praktis dan mudah diisi ulang.",
+    image: "https://images.unsplash.com/photo-1738504821301-e192cc9adb96?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 
-  // BIRD
+// BURUNG
   {
-  id: "bird-cage-deluxe",
-  name: "Bird Cage Deluxe",
-  category: "Burung",
-  price: 320000,
-  description: "Kandang burung premium dengan ruang luas.",
-  details:
-    "Material besi anti karat dan mudah dibersihkan.",
-  image:
-    "https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=1200&auto=format&fit=crop",
+    id: "bird-cage-deluxe",
+    title: "Bird Cage Deluxe",
+    category: "Burung",
+    price: 320000,
+    description: "Kandang burung premium dengan ruang luas.",
+    details: "Material besi anti karat dan mudah dibersihkan.",
+    image: "https://images.unsplash.com/photo-1634413102755-7f0857eba45b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "bird-feeding-set",
-    name: "Bird Feeding Set",
+    title: "Bird Feeding Set",
     category: "Burung",
     price: 60000,
     description: "Set tempat makan dan minum burung.",
-    details:
-      "Desain minimalis dan mudah dipasang.",
-    image:
-      "https://images.unsplash.com/photo-1610112759110-41b5e2d00ff9?q=80&w=426&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Desain minimalis dan mudah dipasang.",
+    image: "https://images.unsplash.com/photo-1610112759110-41b5e2d00ff9?q=80&w=426&auto=format&fit=crop",
   },
   {
     id: "bird-swing-toy",
-    name: "Bird Swing Toy",
+    title: "Bird Swing Toy",
     category: "Burung",
     price: 40000,
     description: "Ayunan bermain untuk burung peliharaan.",
-    details:
-      "Membantu burung tetap aktif dan tidak bosan.",
-    image:
-      "https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?q=80&w=1200&auto=format&fit=crop",
+    details: "Membantu burung tetap aktif dan tidak bosan.",
+    image: "https://images.unsplash.com/photo-1571714998946-c3d3f83c8f1f?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "bird-nest-house",
-    name: "Bird Nest House",
+    title: "Bird Nest House",
     category: "Burung",
     price: 95000,
     description: "Rumah sarang nyaman untuk burung kecil.",
-    details:
-      "Bahan alami dan aman digunakan.",
-    image:
-      "https://images.unsplash.com/photo-1490197415175-074fd86b1fcc?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    details: "Bahan alami dan aman digunakan.",
+    image: "https://images.unsplash.com/photo-1490197415175-074fd86b1fcc?q=80&w=874&auto=format&fit=crop",
+  },
+
+// HAMSTER
+  {
+    id: "hamster-starter-cage",
+    title: "Hamster Starter Cage",
+    category: "Hamster",
+    price: 145000,
+    description: "Kandang hamster lengkap dengan tempat minum, makan, dan terowongan.",
+    details: "Ventilasi baik, plastik aman, mudah dibersihkan, cocok untuk hamster dwarf dan syrian.",
+    image: "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "hamster-exercise-wheel",
+    title: "Hamster Exercise Wheel",
+    category: "Hamster",
+    price: 58000,
+    description: "Roda olahraga senyap untuk hamster agar tetap aktif dan sehat.",
+    details: "Desain solid anti cedera kaki, permukaan anti-slip, diameter 20 cm.",
+    image: "https://images.unsplash.com/photo-1754921506553-9f0be3d8e87e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "hamster-food-mix",
+    title: "Hamster Food Mix",
+    category: "Hamster",
+    price: 42000,
+    description: "Campuran biji-bijian, sayuran kering, dan protein untuk hamster.",
+    details: "Bebas pengawet, kaya serat dan vitamin, cocok untuk semua jenis hamster.",
+    image: "https://plus.unsplash.com/premium_photo-1668677227454-213252229b73?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "hamster-cozy-nest",
+    title: "Hamster Cozy Nest & Bedding",
+    category: "Hamster",
+    price: 35000,
+    description: "Alas kandang berbahan kayu cedar lembut untuk tidur nyaman hamster.",
+    details: "Menyerap bau, aman dimakan, dan tidak berbahaya untuk saluran pernapasan hamster.",
+    image: "https://images.unsplash.com/photo-1676918555382-fcd06a483e25?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "hamster-hideout-house",
+    title: "Hamster Hideout House",
+    category: "Hamster",
+    price: 67000,
+    description: "Rumah kayu mungil sebagai tempat bersembunyi dan tidur hamster.",
+    details: "Material kayu pinus alami, aman dikunyah, lubang masuk diameter 5 cm.",
+    image: "https://images.unsplash.com/photo-1582573177093-51b91a1ccc1a?q=80&w=386&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
